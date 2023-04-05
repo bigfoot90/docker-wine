@@ -53,3 +53,5 @@ RUN export DEBIAN_FRONTEND=noninteractive \
  && apt autoremove --purge -y \
  && rm -rf /var/lib/apt/lists/* \
  && chown -R wine:wine $WINEHOME
+
+USER wine
